@@ -35,6 +35,23 @@
 </p>
 	<p class="omitop">英語サイトは<a href="https://omi-co-ltd.github.io/en">こちら</a>(Click here for English site)</p>
 <h3 class="koumoku">
+	おみくじ
+</h3>
+<input id="omikuji_btn" type="button" value="おみくじを引く">
+    <script>
+        document.getElementById( "omikuji_btn" ).onclick = function() {
+            var rnd = Math.floor( Math.random() * 6 );
+            var omikuji;
+            if (rnd === 0) omikuji = "大吉";
+            if (rnd === 1) omikuji = "吉";
+            if (rnd === 2) omikuji = "中吉";
+            if (rnd === 3) omikuji = "小吉";
+            if (rnd === 4) omikuji = "末吉";
+            if (rnd === 5) omikuji = "凶";
+            alert(omikuji);
+        }
+    </script>
+<h3 class="koumoku">
 本社、支社一覧
 </h3>
 <p>
