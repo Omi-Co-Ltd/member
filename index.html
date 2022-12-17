@@ -9,6 +9,15 @@
 	<input type="password" name="passwd">
 	<input type="button" value="ログイン" onClick="goLoginPage();">
 </form>
-<script src="omiMe.js"></script>
+<script>
+	function goLoginPage(){
+	passwd=document.formno1.passwd.value;
+	if(passwd=="OmiPS0303"){
+		location.href="https://omi-co-ltd.github.io/on/";
+	}else{
+		alert('パスワードが違います')；
+	}
+}
+</script>
 </body>
 </html>
